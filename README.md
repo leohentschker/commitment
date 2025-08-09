@@ -8,29 +8,29 @@ A command-line tool built with Bubble Tea to help create conventional branches a
 go build -o committing
 ```
 
-### Add to PATH
+### Add aliases to shell profile
 
-To use `committing` from anywhere, add it to your shell profile:
-
-**For bash (`~/.bashrc` or `~/.bash_profile`):**
-```bash
-echo 'export PATH="$PATH:$(pwd)"' >> ~/.bashrc
-source ~/.bashrc
-```
+Add these aliases to your shell profile for convenient access:
 
 **For zsh (`~/.zshrc`):**
 ```bash
-echo 'export PATH="$PATH:$(pwd)"' >> ~/.zshrc
-source ~/.zshrc
+alias br="$(pwd)/committing br"
+alias cm="$(pwd)/committing cm" 
+alias st="$(pwd)/committing status"
+alias pr="$(pwd)/committing pr"
+alias fe="$(pwd)/committing fe"
 ```
 
-**For fish (`~/.config/fish/config.fish`):**
+**For bash (`~/.bashrc` or `~/.bash_profile`):**
 ```bash
-echo 'set -gx PATH $PATH (pwd)' >> ~/.config/fish/config.fish
-source ~/.config/fish/config.fish
+alias br="$(pwd)/committing br"
+alias cm="$(pwd)/committing cm"
+alias st="$(pwd)/committing status" 
+alias pr="$(pwd)/committing pr"
+alias fe="$(pwd)/committing fe"
 ```
 
-After adding to PATH, you can use `committing` instead of `./committing`.
+Then reload your shell: `source ~/.zshrc` or `source ~/.bashrc`
 
 ## Usage
 
