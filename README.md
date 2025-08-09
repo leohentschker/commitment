@@ -9,23 +9,11 @@ go build -o committing
 ```
 
 ### Add aliases to shell profile
-
 Add these aliases to your shell profile for convenient access:
-
-**For zsh (`~/.zshrc`):**
 ```bash
 alias br="$(pwd)/committing br"
 alias cm="$(pwd)/committing cm" 
 alias st="$(pwd)/committing status"
-alias pr="$(pwd)/committing pr"
-alias fe="$(pwd)/committing fe"
-```
-
-**For bash (`~/.bashrc` or `~/.bash_profile`):**
-```bash
-alias br="$(pwd)/committing br"
-alias cm="$(pwd)/committing cm"
-alias st="$(pwd)/committing status" 
 alias pr="$(pwd)/committing pr"
 alias fe="$(pwd)/committing fe"
 ```
