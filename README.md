@@ -8,6 +8,30 @@ A command-line tool built with Bubble Tea to help create conventional branches a
 go build -o committing
 ```
 
+### Add to PATH
+
+To use `committing` from anywhere, add it to your shell profile:
+
+**For bash (`~/.bashrc` or `~/.bash_profile`):**
+```bash
+echo 'export PATH="$PATH:$(pwd)"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+**For zsh (`~/.zshrc`):**
+```bash
+echo 'export PATH="$PATH:$(pwd)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+**For fish (`~/.config/fish/config.fish`):**
+```bash
+echo 'set -gx PATH $PATH (pwd)' >> ~/.config/fish/config.fish
+source ~/.config/fish/config.fish
+```
+
+After adding to PATH, you can use `committing` instead of `./committing`.
+
 ## Usage
 
 ### Create a new branch
